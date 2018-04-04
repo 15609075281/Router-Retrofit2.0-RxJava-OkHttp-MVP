@@ -24,6 +24,7 @@ public abstract class BaseFragment extends Fragment {
     /**
      * 加载xml
      * 禁止做耗时操作
+     *
      * @param inflater
      * @param container
      * @param savedInstanceState
@@ -32,11 +33,13 @@ public abstract class BaseFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
+//        return super.onCreateView(inflater, container, savedInstanceState);
+        return inflater.inflate(initView(), container, false);
     }
 
     /**
      * 耗时操作
+     *
      * @param view
      * @param savedInstanceState
      */
@@ -45,4 +48,11 @@ public abstract class BaseFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
     }
+
+    /**
+     * 获取view
+     *
+     * @return
+     */
+    public abstract int initView();
 }

@@ -10,7 +10,7 @@ public class LoginActivity extends BaseActivity {
 
     
     @Override
-    public int inti() {
+    public int initView() {
         return 0;
     }
 }

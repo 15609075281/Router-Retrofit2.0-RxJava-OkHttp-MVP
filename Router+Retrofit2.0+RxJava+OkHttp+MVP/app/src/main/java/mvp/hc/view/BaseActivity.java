@@ -14,13 +14,13 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(inti());
+        setContentView(initView());
     }
     /**
-     * 获取xml
+     * 获取view
      *
      * @return
      */
-    public abstract int inti();
+    public abstract int initView();
 
 }
