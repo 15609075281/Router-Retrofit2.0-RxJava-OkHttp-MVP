@@ -6,13 +6,18 @@ package mvp.hc.module.LoginModule;
  */
 public interface LoginModule {
 
-    void OnLoginLister(LoginSuccec loginSuccec);
+    /**
+     * 登录接口触发器
+     *
+     * @param loginLister
+     */
+    void OnLoginLister(String username, String password, LoginLister loginLister);
 
-    interface LoginSuccec {
+    interface LoginLister {
 
-        String Succec();
+        void Success(String success);
 
-        String Error();
+        void Error(String error);
 
 
     }

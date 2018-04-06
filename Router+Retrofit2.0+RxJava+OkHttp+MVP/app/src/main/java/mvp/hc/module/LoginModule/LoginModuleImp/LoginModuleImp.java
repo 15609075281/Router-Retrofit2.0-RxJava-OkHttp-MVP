@@ -8,8 +8,14 @@ import mvp.hc.module.LoginModule.LoginModule;
  */
 public class LoginModuleImp implements LoginModule {
 
-    @Override
-    public void OnLoginLister(LoginSuccec loginSuccec) {
 
+    @Override
+    public void OnLoginLister(String username, String password, LoginLister loginLister) {
+
+        if (username.equals(password)) {
+            loginLister.Success("成功");
+        } else {
+            loginLister.Error("失败");
+        }
     }
 }

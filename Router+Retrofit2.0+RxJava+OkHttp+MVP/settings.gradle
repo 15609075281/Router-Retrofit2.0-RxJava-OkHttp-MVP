@@ -1,8 +1,5 @@
 //include ':app', ':home'
 include ':app'
-include ':module-java'
 include ':home'
 project(':app').projectDir = new File("app")
 project(':home').projectDir = new File("home")
-project(':module-java').projectDir = new File("module-java")
-

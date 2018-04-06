@@ -9,9 +9,8 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 /**
  * Created by Administrator on 2018/4/4.
  */
-@Route(path = "/test/test")
+@Route(path = ARouterManager.TEST_ACTIVITY)
 public class TestActivity extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

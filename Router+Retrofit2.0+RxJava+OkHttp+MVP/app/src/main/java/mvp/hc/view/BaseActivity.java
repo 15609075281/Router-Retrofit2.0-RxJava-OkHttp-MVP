@@ -15,12 +15,26 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(initView());
+        findView();
     }
+
+//    @Override
+//    protected void onRestart() {
+//        super.onRestart();
+//        findView();
+//    }
+
     /**
      * 获取view
      *
      * @return
      */
     public abstract int initView();
+
+    /**
+     * 初始化
+     */
+    public abstract void findView();
+
 
 }

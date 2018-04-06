@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:background="#FFEFD5"
+            android:layout_height="200dp">
+        <!--手机号码-->
+        <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:background="#B2DFEE"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+            <TextView
+                    android:layout_margin="10dp"
+                    android:text="手机号"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"/>
+
+            <EditText
+                    android:id="@+id/username"
+                    android:hint="输入手机号码"
+                    android:textSize="16sp"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+            />
+
+        </LinearLayout>
+        <!--密码号码-->
+        <LinearLayout
+                android:layout_marginTop="5dp"
+                android:background="#B2DFEE"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+            <TextView
+                    android:layout_margin="10dp"
+                    android:text="密   码"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"/>
+
+            <EditText
+                    android:id="@+id/password"
+                    android:hint="输入密码"
+                    android:textSize="16sp"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+            android:background="#EE5C42"
+            android:text="登录"
+            android:id="@+id/butten"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginBottom="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="200dp"
+            android:layout_height="60dp"/>
+
+
+</RelativeLayout>

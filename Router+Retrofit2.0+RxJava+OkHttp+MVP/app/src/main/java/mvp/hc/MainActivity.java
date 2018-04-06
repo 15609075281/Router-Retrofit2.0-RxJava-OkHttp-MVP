@@ -7,7 +7,7 @@ import android.widget.TextView;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 
-@Route(path = "/test/main")
+@Route(path =ARouterManager.MAIN_ACTIVITY)
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -19,11 +19,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //  应用内简单的跳转(通过URL跳转在'进阶用法'中)
-//                ARouter.getInstance().build("/test/test").navigation();
+                ARouter.getInstance().build(ARouterManager.LOGIN_ACTIVITY).navigation();
                 //跳转并携带参数
-                Bundle bundle = new Bundle();
-                bundle.putSerializable("haha", new Info(1, "黄渤中"));
-                ARouter.getInstance().build("/test/test").with(bundle).navigation();
+//                Bundle bundle = new Bundle();
+//                bundle.putSerializable("haha", new Info(1, "黄渤中"));
+//                ARouter.getInstance().build("/test/test").with(bundle).navigation();
             }
         });
     }
