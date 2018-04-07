@@ -18,12 +18,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         findView();
     }
 
-//    @Override
-//    protected void onRestart() {
-//        super.onRestart();
-//        findView();
-//    }
-
     /**
      * 获取view
      *
