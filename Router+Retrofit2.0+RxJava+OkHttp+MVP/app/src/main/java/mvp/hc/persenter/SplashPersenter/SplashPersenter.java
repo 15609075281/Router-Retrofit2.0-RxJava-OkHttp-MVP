@@ -1,14 +1,14 @@
 package mvp.hc.persenter.SplashPersenter;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import mvp.hc.ARouterManager;
+import hc.com.libs_base.ARouterManager;
 import mvp.hc.view.BaseActivity;
 
 /**
  * Created by Administrator on 2018/4/3.
  */
 
-@Route(path = ARouterManager.SPLASH_ACTIVITY)
+@Route(path = ARouterManager.APP_SPLASH_ACTIVITY)
 public class SplashPersenter extends BaseActivity{
 
 

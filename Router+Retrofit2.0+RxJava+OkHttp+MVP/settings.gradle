@@ -1,5 +1,13 @@
 //include ':app', ':home'
-include ':app'
-include ':home'
+include':libs_base'
+include ':libs_icon'
+include ':app'//主运行
+include ':home'//首页
+include ':classify'//分类
+include ':shopping'//购物
+include ':personal'//我的
 project(':app').projectDir = new File("app")
 project(':home').projectDir = new File("home")
+project(':classify').projectDir = new File("classify")
+project(':shopping').projectDir = new File("shopping")
+project(':personal').projectDir = new File("personal")

@@ -6,15 +6,16 @@ import java.io.Serializable;
  * Created by Administrator on 2018/4/4.
  */
 public class Info implements Serializable {
+    /**
+     * 私有化
+     */
+    private Info() {
+    }
+
 
     private int id;
 
     private String name;
-
-
-    private Info() {
-
-    }
 
     public Info(int id, String name) {
         this.id = id;
